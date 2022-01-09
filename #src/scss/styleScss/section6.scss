@@ -1,0 +1,123 @@
+.sec6 {
+  margin-top: 197px;
+
+
+  .section6mrpd {
+    div {
+      &:first-child {
+        // margin-bottom: 31px;
+      }
+
+      &:nth-child(2) {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+
+        h2 {
+          margin-top : 78px;
+          line-height: 140%;
+        }
+
+        p {
+          margin-top     : 30px;
+          line-height    : 160%;
+          max-width      : 411px;
+          display        : flex;
+          justify-content: center;
+          align-items    : center;
+        }
+
+        margin-bottom: 80px;
+      }
+
+      .section6-text-content {
+        position: relative;
+
+        div {
+          padding: 0;
+        }
+ 
+
+        .sec6txt.col-6.text-end {
+          display      : block;
+          margin-top: 14px;
+          margin-bottom: 0px;
+
+          // p{margin-left: 50px;}
+          &::before {
+            content          : "";
+            position         : absolute;
+            top              : 50%;
+            right            : 3px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform    : translate(-50%, -50%);
+            transform        : translate(-50%, -50%);
+            display          : block;
+            width            : 40px;
+            height           : 0;
+            opacity          : .3;
+            border           : 1px solid #fff;
+            -webkit-transform: rotate(180deg);
+            -ms-transform    : rotate(180deg);
+            transform        : rotate(180deg);
+          }
+        }
+
+        .sec6txt.col-6.text-start {
+
+          // p{margin-right: 50px;}
+          &::before {
+            content          : "";
+            position         : absolute;
+            top              : 50%;
+            left             : 3px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform    : translate(-50%, -50%);
+            transform        : translate(-50%, -50%);
+            display          : block;
+            width            : 40px;
+            height           : 0;
+            opacity          : .3;
+            border           : 1px solid #fff;
+            -webkit-transform: rotate(180deg);
+            -ms-transform    : rotate(180deg);
+            transform        : rotate(180deg);
+          }
+        }
+
+        .sec6txt {
+          line-height: 160%;
+          p {
+            margin: 0px 60px;
+          }
+
+          .color-gray { 
+            padding-bottom: 11px;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  .section6-text-content {
+    &::before {
+      content     : "";
+      position    : absolute;
+      top         : 50%;
+      left        : 50%;
+      margin-right: -50%;
+      transform   : translate(-50%, -50%);
+      width       : 6px;
+      display     : block;
+      height      : 100%;
+      background  : rgb(124, 106, 250);
+      background  : linear-gradient(270deg, rgba(124, 106, 250, 1) 0%, rgba(200, 154, 252, 1) 100%);
+    }
+
+  
+  }
+}

@@ -1,0 +1,31 @@
+ .sec4{
+     margin-top: 199px;
+     .row{
+         div{
+             &:first-child{
+                h2{
+                    margin-left: 10px;
+                }
+             }
+         }
+         .sec4-flex-content{
+            margin-top: 120px;
+            padding-left: 0px;
+            padding-right: 0px;
+            .block1{margin-right: 5px;}
+            .block2{}
+            .block3{margin-left: 5px;}
+            div{
+                .fs24{
+                    margin-top: 56px;
+                    line-height: 140%;
+                }
+                .color-gray8{
+                    margin-top: 31px;
+                    line-height: 160%;
+                    padding: 0 22px!important;
+                }
+            }
+         }
+     }
+ }
