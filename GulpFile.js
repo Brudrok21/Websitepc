@@ -1,6 +1,8 @@
 //const fileinclude = require('gulp-file-include');
 //const del = require('del');
 // cd FLS-Gulp
+//npm rebuild node-sass --force 
+//yarn gulp
 let project_folder = "dist"; //Папка с готовым проектом на сдачу
 let source_folder = "#src"; //Рабочая папка
 

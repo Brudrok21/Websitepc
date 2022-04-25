@@ -1,0 +1,180 @@
+$logo-color: #00cec9;
+$lg        : 1220px;
+$md        : 800px;
+$sm        : 576px;
+
+@mixin dark-theme {
+  $bg-color  : #1a2730;
+  $text-color: #fbfbfb;
+
+  background-color: $bg-color;
+  color           : $text-color;
+
+  *::selection {
+    color     : #fbfbfb;
+    background: #00cec9;
+  }
+}
+
+@mixin light-theme {
+  $bg-color  : #fbfbfb;
+  $text-color: #1e272e;
+
+  background-color: $bg-color;
+  color           : $text-color;
+
+  *::selection {
+    color     : #fbfbfb;
+    background: #00cec9;
+  }
+}
+
+
+
+.author-link {
+  position       : fixed;
+  bottom         : 20px;
+  right          : 20px;
+  display        : flex;
+  padding-right  : 30px;
+  text-decoration: none;
+  font-size      : 20px;
+  line-height    : 32px;
+  font-weight    : bold;
+  color          : #485460;
+  transition     : .2s;
+
+  &:hover {
+    color: darken(#485460, 5%);
+  }
+
+  .first_letter,
+  .second_letter {
+    transition      : .3s;
+    transition-delay: .1s;
+  }
+
+  .logo {
+    position  : absolute;
+    right     : 0;
+    top       : 50%;
+    transform : translateY(-50%);
+    height    : 32px;
+    fill      : $logo-color;
+    transition: .1s;
+
+    &:hover {
+      .first_letter {
+        transform: translateX(18px);
+      }
+
+      .second_letter {
+        transform: translateX(-18px);
+      }
+    }
+  }
+}
+
+
+
+.burger-btn {
+  overflow: visible;
+  cursor  : pointer;
+  fill    : #7c6afa;
+
+  &--1,
+  &--2,
+  &--3 {
+    transition      : .2s;
+    transform-origin: center center;
+  }
+
+  &.active {
+    .burger-btn--1 {
+      transform: translate(-7px, 7px) rotate(45deg);
+    }
+
+    .burger-btn--2 {
+      transform: translateX(20px);
+      opacity  : 0;
+    }
+
+    .burger-btn--3 {
+      transform: translate(-7px, -7px) rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .navbar a {
+    font-size: 21px;
+  }
+
+  .burger-panel {
+    width      : 100%;
+    max-width  : 100%;
+    margin-left: 0;
+    width      : 100%;
+    position   : fixed;
+    top        : 50%;
+    transform  : translate(0%, -50%);
+    z-index    : 100;
+  }
+
+  .burger-panel-active {
+    &::before {
+      opacity   : 0.9;
+      content   : "";
+      position  : absolute;
+      width     : 110vw;
+      height    : 500vw;
+      background: #111111;
+      top       : 50%;
+      left      : 50%;
+      transform : translate(-50%, -50%);
+
+      // transition: ttt 2.3s ease;
+      animation: opacityBackground 0.5s ease;
+
+      @keyframes opacityBackground {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 0.9;
+        }
+      }
+
+    }
+
+    .endelem,
+    .navigation {
+      opacity  : 1;
+      animation: opacityNamigationElem 0.7s ease-in-out;
+
+      @keyframes opacityNamigationElem {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:426px) {
+  .burger-panel {
+    margin-left: -15px;
+  }
+}
+
+
+.b3-text2 {
+  position: relative;
+}
+
+ 

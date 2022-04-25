@@ -3,33 +3,47 @@
     <img class="bg_img" src="../img/main-screen__bgc.png" alt="main-screen__bgc">
 
 
-    <div class="navbar justify-content-between align-items-center d-flex">
-      <div class="logo col-1">
+    <div class="navbar justify-content-between align-items-md-center d-flex">
+      <div class="logo col-md-1 col-sm-2 col-2">
         <a href="#"><img class="w40" src="../img/Group.png" alt="Group"></a>
       </div>
-      <div class="navigation col-8">
-        <ul class="d-flex ul_mr">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Курсы</a></li>
-          <li><a href="#">Расписание</a></li>
-          <li><a href="#">Преподаватели</a></li>
-          <li><a href="#">Рассылка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+ 
+      <div id="burger-panel" class="row col-md-11 col-sm-8 col-8 burger-panel justify-content-between align-items-center d-flex">
+        <div class="navigation col-md-8 col-lg-8 col-xl-9">
+          <ul class="d-flex flex-wrap flex-xl-nowrap ul_mr">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Курсы</a></li>
+            <li><a href="#">Расписание</a></li>
+            <li><a href="#">Преподаватели</a></li>
+            <li><a href="#">Рассылка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-xl-end endelem col-md-3 col-lg-3 col-xl-3">
+          <div class="d-w-btn">
+            <a class="btn_style" href="#">Зайти в кабинет</a>
+          </div> 
+        </div>
       </div>
-      <div class="d-flex justify-content-center endelem col-3">
-        <a class="btn_style" href="#">Зайти в кабинет</a>
-      </div>
+
+        <div class="d-burger-btn col-md-1  col-sm-2 col-2">
+          <svg class="burger-btn" width="40" height="40" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+            <rect class="burger-btn--1" width="40" height="6" rx="3" ry="3" />
+            <rect class="burger-btn--2" width="40" height="6" y="10" rx="3" ry="3" />
+            <rect class="burger-btn--3" width="40" height="6" y="20" rx="3" ry="3" />
+          </svg>
+        </div> 
     </div>
 
-
-    <div class="container">
-      <div class="row absolute-center section1-content-center">
+    
+ 
+    <div class="container con-sec1">
+      <div class="row absolute-center section1-content-center _animScroll" data-checkclass="sec1contentconter" data-anim="false">
         <div class="col-12 section1-heading">
           <h1>Первый курс <br> по компьютерной сборке</h1>
         </div>
 
-        <div class="col-12">
+        <div class="col-12 timeflex">
           <ul class="d-flex section1ulStyle">
             <li>
               <p>18</p>
@@ -51,25 +65,25 @@
         </div>
       </div>
 
-
+ 
       <div class="section1bottom absolute-bottom">
         <div class="container  max-w-1300">
-          <div class="row d-flex align-items-center next-pd">
-            <div class="block1 col-2">
+          <div class="row d-flex flex-wrap align-items-center next-pd">
+            <div class="block1 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">
               <a class="btn_style2" href="#">Заказать курс</a>
             </div>
-            <div class="block2 col-3">
+            <div class="block2 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
               <p class="d-flex justify-content-between"><span class="color-gray">Учеников всего:</span><span>200</span></p>
               <p class="d-flex justify-content-between"><span class="color-gray">Успешно закончили курс:</span><span>190</span></p>
             </div>
     
-            <div class="block3 col-7">
+            <div class="block3 col-12 col-md-12 col-lg-6 col-xl-7">
               <div class="b3-text1">
                 <p  ><span class="color-gray">Заработано учениками:</span><span>400 000₽</span></p>
               </div>
     
               <div class="b3-text2 div-this-arrow-gradient">
-                <span class="arrow-gradient"></span>
+                <span class="arrow-gradient _animScroll" data-checkclass="arrow-gradient" data-anim="false"></span>
               </div>
     
               <div class="b3-text3 d-flex justify-content-between color-gray">
@@ -78,13 +92,11 @@
               </div>
             </div>
           </div>
-        </div>
-  
+        </div> 
       </div>
-
-
-
+ 
     </div>
+ 
   </div>
 
 </section>

@@ -1,14 +1,22 @@
- 
- .sec7{
-  margin-top: 236px;
-  .row{
-    .sec7-header{
-      margin-bottom: 110px;
-      h2{
-        margin-left: 52px;
+$lg   : 1220px;
+$md   : 800px;
+$sm   : 576px;
+$h1pl :48px;
+$h1mob:34px;
+
+.sec7 {
+  margin-top: 228px;
+
+  .row {
+    .sec7-header {
+      margin-bottom: 100px;
+
+      h2 {
+        margin-left: 31px;
         line-height: 140%;
       }
     }
+
     .div-avatar {
       img {
         border-radius: 50px;
@@ -16,14 +24,114 @@
         width        : 190px;
         height       : 190px;
         margin-bottom: 40px;
-      } 
+      }
+
       .sec7-name {
         font-size    : 24px;
         margin-bottom: 22px;
-      } 
+      }
+
       .sec7-spec {
         margin-bottom: 35px;
       }
     }
   }
- }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1346px) {}
+
+@media screen and (max-width: 1198px) {
+  .sec7 { 
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  margin-top: 0px;
+    .row {
+ 
+      .sec7-header { 
+
+        h2 {
+          margin-left: 15px;
+        }
+      }
+
+      .div-avatar {
+        .sec7-name {
+          margin-bottom: 22px;
+        }
+
+        .sec7-spec {
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .div-avatar{
+    padding: 15px;
+    p , i , span, b , h1, h2, h3, h4,h5,h6{
+      max-width: 512px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .sec7-header {
+    margin-bottom: 50px !important; 
+    div{
+      flex-direction: column;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: $h1mob !important;
+        margin-left: 0px !important;
+      }
+    }
+ 
+  }
+}
+
+@media screen and (max-width: $md) {
+  .sec7 {
+    .row {
+      .sec7-header {
+        margin-bottom: 75px;
+
+        h2 {
+          font-size: $h1pl;
+          margin-left: 15px;
+        }
+      }
+
+      .div-avatar {
+ 
+        padding-top: 35px;
+        padding-bottom: 35px; 
+
+        img { 
+          margin-bottom: 20px !important;
+        }
+        .sec7-name {
+          margin-bottom: 15px !important;
+        }
+
+        .sec7-spec {
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+  }
+}
+
+ 
