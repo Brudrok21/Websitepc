@@ -147,7 +147,7 @@ $h1mob:34px;
     display        : flex;
     justify-content: center;
     align-items    : center;
-    min-height     : 100vh;
+    // min-height     : 100vh;
     padding-top    : 15px;
     padding-bottom : 15px;
 
@@ -180,12 +180,12 @@ $h1mob:34px;
 }
 
 @media screen and (max-width: 576px) {
-
+ 
   .section3 {
     .txt-heading {
       span {}
 
-      h2 {
+      h2{
         font-size: $h1mob !important;
       }
     }

@@ -55,9 +55,7 @@ $h1mob:34px;
      }
    }
 }
-.rowsec2{
-  flex-direction: column-reverse;
-}
+ 
 .rowsec2 > div{
   width: 100% !important;
   flex-direction: column;
@@ -69,7 +67,10 @@ $h1mob:34px;
 
 
 
- @media screen and (max-width: $md) {
+ @media screen and (max-width: 767px) {
+  .rowsec2{
+    flex-direction: column-reverse;
+  }
   .sec2-text > h2{
     font-size: $h1pl;
   }

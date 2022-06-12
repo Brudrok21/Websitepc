@@ -5,90 +5,273 @@ $h1pl :48px;
 $h1mob:34px;
 
 
-.sec5{
+.sec5 {
     margin-top: 222px;
-    .row{
-        div{
-            &:first-child{
+
+    .row {
+        div {
+            &:first-child {
                 padding: 0px;
-                .txt-heading{
-                    .border-gradient-heading{
+
+                .txt-heading {
+                    .border-gradient-heading {
                         margin-left: 7px;
                     }
-                    .fs48{
+
+                    .fs48 {
                         margin-left: 39px;
                     }
                 }
             }
         }
-        .section5-logo-border{
+
+        .section5-logo-border {
+            flex-wrap  : wrap;
             margin-left: 0px;
-            padding: 0px; 
-            margin-top: 77px;
-  
-            a{min-height: 150px;
+            padding    : 0px;
+            margin-top : 77px;
+
+            a {
+                min-height : 150px;
                 align-items: center;
-                &:nth-child(1){ 
-                    border-bottom:1px solid #4d4d4d;
-                }
-                &:nth-child(2){
-                    border-bottom:1px solid #4d4d4d;
-                    border-left:1px solid #4d4d4d;
-                }
-                &:nth-child(3){
-                    border-bottom:1px solid #4d4d4d;
-                    border-right:1px solid #4d4d4d;
-                    border-left:1px solid #4d4d4d;
-                }
-                &:nth-child(4){ 
-                    border-bottom:1px solid #4d4d4d;
-                }
-        
-                &:nth-child(6){
-         
-                    border-left:1px solid #4d4d4d;;
-                }
-                &:nth-child(7){
-         
-                    border-right:1px solid #4d4d4d;;
-                    border-left:1px solid #4d4d4d;;
-                }
             }
 
-            
-            .top-logo-w{
-                padding-left: 66px;
-                padding-right: 66px;
-                &:first-child{ 
-                    padding-left: 54px;
+            @media screen and (min-width: 1292px) {
+                a {
+                    &:nth-child(1) {
+                        border-bottom: 1px solid #4d4d4d;
+                    }
+
+                    &:nth-child(2) {
+                        border-bottom: 1px solid #4d4d4d;
+                        border-left  : 1px solid #4d4d4d;
+                    }
+
+                    &:nth-child(3) {
+                        border-bottom: 1px solid #4d4d4d;
+                        border-right : 1px solid #4d4d4d;
+                        border-left  : 1px solid #4d4d4d;
+                    }
+
+                    &:nth-child(4) {
+                        border-bottom: 1px solid #4d4d4d;
+                    }
+
+                    &:nth-child(6) {
+
+                        border-left: 1px solid #4d4d4d;
+                        ;
+                    }
+
+                    &:nth-child(7) {
+
+                        border-right: 1px solid #4d4d4d;
+                        ;
+                        border-left: 1px solid #4d4d4d;
+                        ;
+                    }
                 }
-                &:nth-child(5){ 
-                    padding-left: 54px;
-                }
-                &:nth-child(4){ 
-                    padding-right: 60px;
-                }
-                &:last-child{ 
-                    padding-right: 60px;
+
+
+
+                .top-logo-w {
+                    padding-left : 64px;
+                    padding-right: 64px;
+
+                    &:first-child {
+                        padding-left: 54px;
+                    }
+
+                    &:nth-child(5) {
+                        padding-left: 54px;
+                    }
+
+                    &:nth-child(4) {
+                        padding-right: 60px;
+                    }
+
+                    &:last-child {
+                        padding-right: 60px;
+                    }
                 }
             }
-        } 
+        }
     }
 }
 
 
-@media screen and (max-width: 1346px) {}
+@media screen and (max-width: 1346px) {
+    .sec5 {
+        .row {
+            div {
+                &:first-child {
+                    .txt-heading {
+                        padding: 0px 15px;
+                    }
+                }
+            }
 
-@media screen and (max-width: 1198px) { 
+        }
+    }
 }
 
-@media screen and (max-width: 990px) { 
-}
+@media screen and (max-width: 1292px) {
+    .sec5 {
+        .row {
+            div {
+                &:first-child {
+                    .txt-heading { 
+                        .fs48 {
+                            margin-left: 25px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section5-logo-border {
+        a {
+            &:nth-child(1) {
+                border-bottom: 1px solid #4d4d4d;
+            }
+
+            &:nth-child(2) {
+                border-bottom: 1px solid #4d4d4d;
+                border-left  : 1px solid #4d4d4d;
+            }
+
+            &:nth-child(3) {
+                border-bottom: 1px solid #4d4d4d;
+                border-left  : 1px solid #4d4d4d;
+            }
+
+            &:nth-child(4) {
+                border-bottom: 1px solid #4d4d4d;
+                border-right : 1px solid #4d4d4d;
+            }
+            &:nth-child(5) {
+                 border-bottom: 1px solid #4d4d4d;
+            }
+            &:nth-child(6) {
+                border-bottom: 1px solid #4d4d4d;
+                border-left: 1px solid #4d4d4d;
  
+            }
 
-@media screen and (max-width: $md) { 
+            &:nth-child(7) { 
+                border-right: 1px solid #4d4d4d; 
+            }
+
+        }
+    }
+
+    .top-logo-w {
+        padding-left : 64px;
+        padding-right: 64px;
+
+        &:first-child {
+            padding-left: 64px;
+        }
+
+        &:nth-child(5) {
+            padding-left: 64px;
+        }
+
+        &:nth-child(4) {
+            padding-right: 64px;
+        }
+
+        &:last-child {
+            padding-right: 64px;
+        }
+    }
 }
 
-@media screen and (max-width: 576px) { 
+@media screen and (max-width: 990px) {
+    .sec5 {
+        margin-top: 0px;
+    }
+    .section5-logo-border {
+        a {
+            &:nth-child(1) {
+                border-bottom: 1px solid #4d4d4d;
+            }
+
+            &:nth-child(2) {
+                border-bottom: 1px solid #4d4d4d;
+                border-left  : 1px solid #4d4d4d;
+            }
+
+            &:nth-child(3) {
+                border-bottom: 1px solid #4d4d4d;
+                border-right : 1px solid #4d4d4d;
+                border-left  : 1px solid #4d4d4d;
+            }
+
+            &:nth-child(4) {
+                border-bottom: 1px solid #4d4d4d;
+            }
+
+            &:nth-child(6) {
+
+                border-left: 1px solid #4d4d4d;
+                ;
+            }
+
+            &:nth-child(7) {
+
+                border-right: 1px solid #4d4d4d;
+                ;
+                border-left: 1px solid #4d4d4d;
+                ;
+            }
+
+            border: 1px solid #4d4d4d;
+            margin: 10px 10px;
+        }
+
+        .top-logo-w {
+            padding-left : 0px;
+            padding-right: 0px;
+            padding      : 15px 35px;
+
+            &:first-child {
+                padding-left: 35px;
+            }
+
+            &:nth-child(5) {
+                padding-left: 35px;
+            }
+
+            &:nth-child(4) {
+                padding-right: 35px;
+            }
+
+            &:last-child {
+                padding-right: 35px;
+            }
+        }
+    }
 }
- 
+
+
+@media screen and (max-width: $md) {}
+
+@media screen and (max-width: 576px) {
+    .sec5 {
+        .row {
+            div {
+                &:first-child {
+                    .txt-heading {
+                        flex-direction: column;
+
+                        .fs48 {
+                            margin-left: 0px !important;
+                            text-align : center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

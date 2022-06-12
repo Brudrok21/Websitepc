@@ -136,6 +136,44 @@ body {
   padding      : 10px 30px;
   background   : linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
   border-radius: 50px;
+
+  transition: all .3s;
+  position  : relative;
+  overflow  : hidden;
+  z-index   : 1;
+
+  &:after {
+    content      : '';
+    position     : absolute;
+    bottom       : 0;
+    left         : 0;
+    width        : 100%;
+    height       : 100%;
+    background   : linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 10rem;
+    z-index      : -2;
+  }
+
+  &:before {
+    content      : '';
+    position     : absolute;
+    bottom       : 0;
+    right        : 0;
+    width        : 0%;
+    height       : 100%;
+    background   : linear-gradient(94.26deg, #7C6AFA 40%, #5c4ad1 100%);
+    transition   : all .3s;
+    border-radius: 10rem;
+    z-index      : -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
 .btn_style2 {
@@ -144,7 +182,6 @@ body {
   padding      : 13px 25px;
   background   : linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 
-  &
 }
 
 .btn_style3 {
@@ -178,23 +215,30 @@ body {
 .rotate265 {
   transform: rotate(265deg);
 }
-
+.rotate255 {
+  transform: rotate(255deg);
+}
 .rotate215 {
   transform: rotate(215deg);
 }
 
 @media screen and (max-width: 995px) {
-  .sec6 , .sec8{
+
+  .sec6,
+  .sec8 {
     margin-top: 0px;
   }
+
   .padd-container {
     padding: 60px 15px !important;
   }
 }
-
-
-
+ 
 @media screen and (max-width: 576px) {
+  .fs48{ 
+    margin-top: 34px!important;
+    font-size: $h1mob !important;
+  }
   span.border-gradient-heading {
     width : 70px;
     height: 70px;

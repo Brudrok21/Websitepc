@@ -159,7 +159,12 @@ $h1mob:34px;
 }
 
 
-@media screen and (max-width: 1346px) {}
+@media screen and (max-width: 1346px) {
+  .section6-text-content{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 
 @media screen and (max-width: 1198px) {}
 
@@ -178,6 +183,22 @@ $h1mob:34px;
     width          : 100%;
     min-height     : 100vh;
     padding        : 15px;
+  }
+
+  .text-end {
+    &::before { 
+      top       : 50%;
+      left      : 52% !important;
+      transform : translate(-50%, -50%); 
+    }
+  }
+
+  .text-start {
+    &::before { 
+      top       : 50%;
+      left      : -42% !important;
+      transform : translate(-50%, -50%); 
+    }
   }
 
   .section6-text-content {

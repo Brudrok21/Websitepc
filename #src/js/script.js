@@ -4,8 +4,54 @@
 //Русский военный корабль иди нахуй 
 //Русский военный корабль иди нахуй
 //Слава Украине, Героем слава!
+//Слава Украине, Героем слава! 
+
+
+  
+
+
+
 
  
+ 
+
+let timerTime = document.querySelectorAll(".timerTime");
+let objectTimer = {
+  day: 18,
+  hour: 18,
+  minute: 18,
+  second: 18
+}
+let keyObjectTimer = Object.keys(objectTimer);
+ 
+function timer(objectTimer) {
+  let timer = setInterval(() => {
+    if (objectTimer.second == 0) {
+      objectTimer.second = 59;
+      objectTimer.minute--;
+    } else {
+      objectTimer.second--;
+    }
+    if (objectTimer.minute == 0) {
+      objectTimer.minute = 59;
+      objectTimer.hour--;
+    }
+    if (objectTimer.hour == 0) {
+      objectTimer.hour = 23;
+      objectTimer.day--;
+    }
+    if (objectTimer.day == 0) {
+      objectTimer.day = 18;
+    }
+
+    timerTime.forEach((elem , i) => { 
+      if(elem.dataset.timeer == keyObjectTimer[i]) {
+      elem.innerHTML = `${objectTimer[keyObjectTimer[i]]}`;
+      }
+    })
+  }, 1000)
+}timer(objectTimer);
+  
 
 const button = document.querySelector('.burger-btn');
 const burger_panel = document.querySelector("#burger-panel");
@@ -25,9 +71,9 @@ button.addEventListener('click', () => {
 
 
 let arrow = document.querySelector(".arrow-gradient");
-console.log(arrow.getBoundingClientRect());
-console.log(document.documentElement.clientWidth)
-console.log(document.documentElement.clientHeight)
+// console.log(arrow.getBoundingClientRect());
+// console.log(document.documentElement.clientWidth)
+// console.log(document.documentElement.clientHeight)
 
  
 window.addEventListener("resize", ()=>{
@@ -36,8 +82,7 @@ window.addEventListener("resize", ()=>{
 
 window.addEventListener("scroll", ()=>{elemInViewport()});
 
-function elemInViewport() {
-  console.dir("elem")
+function elemInViewport() { 
   _animScroll.forEach((elem) => {
     var box = elem.getBoundingClientRect();
     var top = box.top;
@@ -48,32 +93,17 @@ function elemInViewport() {
     var height = document.documentElement.clientHeight;
  
  
-    // bottom <= height 
-
+    // bottom <= height  
     if ((bottom <= height) && (top >= 10)) {
-      elem.dataset.anim = elem.dataset.checkclass;
-      console.dir(elem)
-    } else {
-
+      elem.dataset.anim = elem.dataset.checkclass; 
+    } else { 
     }
 
   });
+ 
 } elemInViewport();
- 
 
 
-// let testSVG = document.getElementById("testSVG");
-// let child = testSVG.children;
  
-// for(let i = 0; i < child.length; i++){
-//   let elem = child[i];
-//   if(elem.tagName === "path" || elem.tagName === "circle"){
-    
 
-//     // stroke-dasharray="lenght" stroke-dashoffset="0"
-//     console.log(elem.tagName +" -- " + "N = " + i + " -- "+ " lenght = " + Math.round(elem.getTotalLength()));
-//     console.log(elem);
-//   }
-// }
- 
  
