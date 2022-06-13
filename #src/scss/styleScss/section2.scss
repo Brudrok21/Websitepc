@@ -26,7 +26,7 @@ $h1mob:34px;
    }
  }
  .sec2img{
-  width: 100%;
+  width: 100% !important;
   max-width: 526px;
 }
 
@@ -39,7 +39,7 @@ $h1mob:34px;
 
  @media screen and (max-width: 1198px) {
   .sec2img{
-    width: 100%;
+    width: 100% !important;
     max-width: 526px;
   }
  .sec2 { 

@@ -2193,7 +2193,7 @@ h2._animScroll[data-anim="false"] {
 }
 
 .sec2img {
-  width: 100%;
+  width: 100% !important;
   max-width: 526px;
 }
 
@@ -2350,6 +2350,14 @@ h2._animScroll[data-anim="false"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.sec5 .row .section5-logo-border a picture img {
+  width: 100% !important;
+}
+
+.sec5 .row .section5-logo-border a img {
+  width: 100% !important;
 }
 
 .sec6 {
@@ -3096,7 +3104,7 @@ body {
 
 @media screen and (max-width: 1198px) {
   .sec2img {
-    width: 100%;
+    width: 100% !important;
     max-width: 526px;
   }
 
