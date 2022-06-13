@@ -2194,6 +2194,7 @@ h2._animScroll[data-anim="false"] {
 
 .sec2img {
   width: 100% !important;
+  height: auto !important;
   max-width: 526px;
 }
 
@@ -2354,10 +2355,12 @@ h2._animScroll[data-anim="false"] {
 
 .sec5 .row .section5-logo-border a picture img {
   width: 100% !important;
+  height: auto !important;
 }
 
 .sec5 .row .section5-logo-border a img {
   width: 100% !important;
+  height: auto !important;
 }
 
 .sec6 {
