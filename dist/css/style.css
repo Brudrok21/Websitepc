@@ -2192,6 +2192,11 @@ h2._animScroll[data-anim="false"] {
   margin-left: 7px;
 }
 
+.sec2img {
+  width: 100%;
+  max-width: 526px;
+}
+
 .section3stylegradient {
   display: block !important;
 }
