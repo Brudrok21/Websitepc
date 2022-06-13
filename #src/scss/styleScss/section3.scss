@@ -183,9 +183,12 @@ $h1mob:34px;
  
   .section3 {
     .txt-heading {
+      flex-direction: column;
       span {}
 
       h2{
+        margin-left: 0px !important;
+        text-align: center;
         font-size: $h1mob !important;
       }
     }

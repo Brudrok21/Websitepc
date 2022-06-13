@@ -55,7 +55,14 @@ $placecolor:#d6d6d6;
 
   label {
     position : absolute; 
-
+    .d-w-btn2{ 
+      margin-bottom: 0px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+     
     a {
       padding: 13px 30px;
     }
