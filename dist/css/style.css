@@ -1,3 +1,14 @@
+
+
+body {
+  background-image: url("../img/bgc.webp");
+  background: url("../img/bgc.webp"); 
+  background-color: #080808; 
+  margin: 0 auto;
+  width: 100%;
+}
+
+
 .author-link {
   position: fixed;
   bottom: 20px;
@@ -2685,15 +2696,7 @@ ol {
 a {
   text-decoration: none;
 }
-
-body {
-  background-image: url("../img/bgc.webp");
-  background: url("../img/bgc.webp"); 
-  background-color: #080808; 
-  margin: 0 auto;
-  width: 100%;
-}
-
+ 
 .border-gradient-heading {
   display: block;
   position: relative;
