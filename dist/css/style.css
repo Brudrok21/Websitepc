@@ -2687,7 +2687,8 @@ a {
 }
 
 body {
-  background: url("../img/bgc.jpg"); 
+  background-image: url("../img/bgc.webp");
+  background: url("../img/bgc.webp"); 
   margin: 0 auto;
   width: 100%;
 }
