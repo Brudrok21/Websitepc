@@ -2689,6 +2689,7 @@ a {
 body {
   background-image: url("../img/bgc.webp");
   background: url("../img/bgc.webp"); 
+  background-color: #080808; 
   margin: 0 auto;
   width: 100%;
 }
