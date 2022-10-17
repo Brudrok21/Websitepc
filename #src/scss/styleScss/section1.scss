@@ -281,6 +281,9 @@ $h1mob:34px;
     }
   }
 }
+.sec1_footer_btn{
+  justify-content: end;
+}
 
 
 @media screen and (min-width: $md) and (max-width: $lg) {
@@ -486,6 +489,10 @@ $h1mob:34px;
       }
 
     }
+  }
+
+  .sec1_footer_btn{
+    justify-content: center;
   }
 }
 
