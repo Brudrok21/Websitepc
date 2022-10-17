@@ -12,7 +12,7 @@ $placecolor:#d6d6d6;
 }
 
 .sec8-form { 
-
+  height: 50px;
 
   input[type="text"]::-moz-placeholder {
     color: $placecolor;
@@ -42,15 +42,26 @@ $placecolor:#d6d6d6;
     color           : inherit;
     background-color: transparent;
     cursor          : pointer;
-    outline         : none !important;
-
-
-
+    outline         : none !important; 
     width        : 492px; 
     min-width: 270px;
     height       : 44px;
     background   : #ffffff40;
     border-radius: 50px;
+    border-left: 2px solid rgba(255, 255, 255, 0);
+    transition: 0.3s ease;
+    &:hover,&:focus, &:target{ 
+      height       : 49px;
+      transition: 0.3s ease;
+    }
+    &:focus, &:target{
+      transition: 0.3s ease;
+      border-left: 2px solid #df5950;
+      &::placeholder{
+        transition: 0.3s ease; 
+        opacity: 0.7;
+      }
+    }
   }
 
   label {
@@ -177,6 +188,7 @@ $placecolor:#d6d6d6;
       width: calc(100vw - 10vw);
       height       : 44px;
       border-radius: 50px;
+      transition: 0.3s ease; 
     }
 
     label {

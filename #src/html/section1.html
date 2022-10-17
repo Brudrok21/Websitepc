@@ -1,12 +1,16 @@
 <section>
   <div class="background">
-    <img class="bg_img" width="auto" src="../img/main-screen__bgc.png" alt="main-screen__bgc">
-
+    <picture>
+      <source media="(max-width:768px)" srcset="../img/main-screen__bgc_mob.webp"/>
+      <source media="(min-width:769px)" srcset="../img/main-screen__bgc.webp"/>
+      <img class="bg_img" width="auto" src="../img/main-screen__bgc.webp" alt="main-screen__bgc">
+    </picture>
+ 
 
     <div class="navbar justify-content-between align-items-md-center d-flex">
       <div class="logo col-md-1 col-sm-2 col-2">
         <a href="#">
-          <img width="40px" height="40px" class="w40" src="../img/Group.png" alt="Group">
+          <img width="40px" height="40px" class="w40" src="../img/Group.webp" alt="Group">
         </a>
       </div>
  

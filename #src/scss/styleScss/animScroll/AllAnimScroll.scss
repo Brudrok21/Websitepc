@@ -411,7 +411,13 @@ $h1mob:34px;
 /*
 ############ Section @5 ############
 */
-
+.logoBrand{
+  transition: 0.3s ease;
+}
+.logoBrand:hover{
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
 /*
 ############ Section @6 ############
 */
@@ -557,6 +563,7 @@ $h1mob:34px;
     opacity : 1;
   }
 
+ 
   .sec7-name {
     animation: avatarContntName 0.7s ease-out;
   }

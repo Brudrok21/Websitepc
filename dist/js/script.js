@@ -1,19 +1,4 @@
-'use strict';
-
-//Русский военный корабль иди нахуй 
-//Русский военный корабль иди нахуй 
-//Русский военный корабль иди нахуй
-//Слава Украине, Героем слава!
-//Слава Украине, Героем слава! 
-
-
-  
-
-
-
-
- 
- 
+'use strict'; 
 
 let timerTime = document.querySelectorAll(".timerTime");
 let objectTimer = {
@@ -70,11 +55,7 @@ button.addEventListener('click', () => {
 
 
 
-let arrow = document.querySelector(".arrow-gradient");
-// console.log(arrow.getBoundingClientRect());
-// console.log(document.documentElement.clientWidth)
-// console.log(document.documentElement.clientHeight)
-
+let arrow = document.querySelector(".arrow-gradient"); 
  
 window.addEventListener("resize", ()=>{
   elemInViewport();

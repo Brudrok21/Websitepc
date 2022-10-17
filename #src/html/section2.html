@@ -2,7 +2,11 @@
    <div class="padd-container container sec2 max-w-1300">
      <div class="row d-flex flex-wrap rowsec2">
        <div class="col-12 col-md-6 sec2-img">
-         <img width="526px" height="542px" class="sec2img _animScroll" data-checkclass="sec2img" data-anim="false" src="../img/about__img.png" alt="about__img">
+        <picture>
+          <source media="(max-width:768px)" srcset="../img/about__img_mob.webp"/>
+          <source media="(min-widht:769px)" srcset="../img/about__img.webp" /> 
+          <img width="526px" height="542px" class="sec2img _animScroll" data-checkclass="sec2img" data-anim="false" src="../img/about__img.webp" alt="about__img">
+        </picture> 
        </div>
        <div class="col-12   col-md-6 sec2-text">
          <h2 class="sec2h2 fs48 _animScroll" data-checkclass="sec2h2" data-anim="false">Чем мы занимаемся?</h2>
